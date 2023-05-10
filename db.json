@@ -1,0 +1,63 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "category": "монитор",
+            "model": "LG 27MP400-B",
+            "status": "В наличии",
+            "rating": 4,
+            "price": 14999,
+            "details": [
+                ["экран", "27\""],
+                ["цвет", "чёрный"]
+            ],
+            "description": "Монитор LG 27MP400-B предоставляет владельцу обширную рабочую область – 597x336 мм. На таком пространстве удобно и фильмы смотреть, и с графическими программами работать. Для достижения наилучшего качества изображения экран изготовлен на основе технологии IPS, а его разрешение составляет 1920x1080 пикс.\nДинамическое обновление экрана AMD FreeSync сочетается с технологией защиты зрения, поэтому монитор LG 27MP400-B подходит для того, кто собирается работать за ним часто и подолгу. Трехсторонний безрамочный дисплей обеспечивает изображение без границ. Для удобства работы наклон монитора LG 27MP400-B регулируется.",
+            "images": [
+                "assets/images/monitor/27mp400/1.webp",
+                "assets/images/monitor/27mp400/2.webp",
+                "assets/images/monitor/27mp400/3.webp",
+                "assets/images/monitor/27mp400/4.webp",
+                "assets/images/monitor/27mp400/5.webp"
+            ]
+        },
+        {
+            "id": 2,
+            "category": "монитор",
+            "model": "LG UltraGear 27GN600-B",
+            "status": "В наличии",
+            "price": 25999,
+            "rating": 3,
+            "details": [
+                ["экран", "27\""],
+                ["цвет", "чёрный"]
+            ],
+            "description" : "27'' игровой монитор LG 27GN600-B UltraGear имеет Full HD (1920x1080) IPS матрицу, с временем отклика 1 мс (GTG) и частотой обновления 144 Гц. Монитор совместим с технологиями NVIDIA G-SYNC и AMD FreeSync Premium.",
+            "images": [
+                "assets/images/monitor/27gn600/1.webp",
+                "assets/images/monitor/27gn600/2.webp",
+                "assets/images/monitor/27gn600/3.webp",
+                "assets/images/monitor/27gn600/4.webp",
+                "assets/images/monitor/27gn600/5.webp"
+            ]
+        },
+        {
+            "id": 3,
+            "category": "монитор",
+            "model": "LG UltraFine 27UL600-W",
+            "status": "Нет в наличии",
+            "price": 39799,
+            "rating": 5,
+            "details": [
+                ["экран", "27\""],
+                ["цвет", "белый"]
+            ],
+            "description" : "LG 27UL600-W - игровой монитор диагональю 27 дюймов с разрешением 3840x2160. Этот монитор с 99% охватом спектра sRGB является отличным решением для фотографов, дизайнеров и тех, кто ищет высокосочные цвета. Для подключения источников сигнала используются цифровые интерфейсы HDMI 2.0 (×2) и DisplayPort 1.4.",
+            "images": [
+                "assets/images/monitor/27ul600/1.webp",
+                "assets/images/monitor/27ul600/2.webp",
+                "assets/images/monitor/27ul600/3.webp",
+                "assets/images/monitor/27ul600/4.webp"
+            ]
+        }
+    ]
+}

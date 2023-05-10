@@ -1,0 +1,12 @@
+<mat-toolbar class="header">
+    <a class="no-select link" [routerLink]="''">
+          <img src="assets/images/LG_symbol.svg" class="logo" alt="логотип">
+          <span>Life's good</span>
+    </a>
+    <span class="spacer"></span>
+    <div class="no-select">
+        <a mat-button [routerLink]="''">Главная</a>
+        <a mat-button [routerLink]="'products'">Товары</a>
+        <a mat-button matBadge="2" matBadgePosition="after" matBadgeColor="primary" [routerLink]="'basket'">Корзина</a>
+    </div>
+</mat-toolbar>

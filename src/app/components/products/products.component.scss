@@ -1,0 +1,48 @@
+.container {
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
+    color: #212121;
+}
+
+p {
+    color: #212121;
+    & span {
+        font-weight: 500;
+    }
+    &::first-letter {
+        color: black;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    width: 300px;
+}
+
+.divider {
+    margin: 12px 0;
+    background-color: #212121;
+}
+
+.image {
+    height: 350px;
+    object-fit: contain;
+}
+
+.buttons {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    & button:disabled {
+        background-color: #999999;
+        color: #ffffff;
+    }
+}

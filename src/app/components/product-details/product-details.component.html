@@ -1,0 +1,51 @@
+<div class="container">
+    <h1 class="title">{{ product.category }} {{ product.model }}</h1>
+    <h3 class="title">{{ product.status }}</h3>
+    <p-carousel
+        [value]="product.images"
+        [numVisible]="1"
+        [numScroll]="1"
+        [circular]="true"
+        class="carousel"
+    >
+        <ng-template let-image pTemplate="item">
+            <div class="image_wrapper">
+                <img
+                    src="{{ image }}"
+                    [alt]="'картинка товара'"
+                    class="image"
+                />
+            </div>
+        </ng-template>
+    </p-carousel>
+    <div class="buttons">
+        <button mat-icon-button color="primary" (click)="toggleFavourite()">
+            <mat-icon *ngIf="!isFavourite">favorite_outline</mat-icon>
+            <mat-icon *ngIf="isFavourite">favorite</mat-icon>
+        </button>
+        <button
+            mat-raised-button
+            color="primary"
+            [disabled]="product.status === 'Нет в наличии'"
+        >
+            Купить
+        </button>
+    </div>
+    <mat-expansion-panel class="panel">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Характеристики </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Модель: {{ product.model }}</p>
+        <p>Рейтинг: {{ product.rating }}</p>
+        <p>Цена: {{ product.price }}</p>
+        <p *ngFor="let detail of product.details">
+            {{ toUpperFirstLetter(detail[0]) }}: {{ detail[1] }}
+        </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="panel">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Описание </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>{{ product.description }}</p>
+    </mat-expansion-panel>
+</div>

@@ -1,0 +1,27 @@
+.header {
+    margin-bottom: 20px;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.no-select {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.logo {
+    height: 50px;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+
+    & span {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,43 @@
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel {
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.image {
+    height: 350px;
+    object-fit: contain;
+}
+
+.image_wrapper {
+    display: flex;
+    justify-content: center;
+}
+.panel {
+    margin: 10px 0;
+    width: 420px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+
+    & button {
+        margin: 5px 0;
+
+        &:disabled {
+            background-color: #999999;
+            color: #ffffff;
+        }
+    }
+}

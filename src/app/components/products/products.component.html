@@ -1,0 +1,42 @@
+<div class="container">
+    <mat-card *ngFor="let product of products" class="card">
+        <mat-card-header>
+            <mat-card-title class="title">
+                {{ product.model }}
+            </mat-card-title>
+            <mat-card-subtitle class="title">
+                {{ product.status }}
+            </mat-card-subtitle>
+        </mat-card-header>
+        <img
+            src="{{ product.images[0] }}"
+            alt="картинка товара"
+            class="image"
+        />
+        <mat-card-content>
+            <p>
+                Рейтинг: <span>{{ product.rating }}</span>
+            </p>
+            <mat-divider class="divider"></mat-divider>
+            <p>
+                Цена: <span>{{ product.price }}</span> &#8381;
+            </p>
+        </mat-card-content>
+        <mat-card-actions class="buttons">
+            <button
+                mat-raised-button
+                color="primary"
+                [disabled]="product.status === 'Нет в наличии'"
+            >
+                В корзину
+            </button>
+            <button
+                mat-raised-button
+                color="primary"
+                [routerLink]="['/product', product.id]"
+            >
+                Подробнее
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

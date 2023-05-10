@@ -1,3 +1,6 @@
+<mat-toolbar class="admin_panel" *ngIf="canEdit">
+    <a mat-button (click)="openDialog()">Добавить товар</a>
+</mat-toolbar>
 <div class="container">
     <mat-card *ngFor="let product of products" class="card">
         <mat-card-header>

@@ -1,9 +1,14 @@
 .container {
-    margin: 0 20px;
+    margin: 20px 20px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
+}
+
+.admin_panel {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .title {

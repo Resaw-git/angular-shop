@@ -21,6 +21,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CarouselModule } from 'primeng/carousel';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
     declarations: [
@@ -47,7 +48,8 @@ import { CarouselModule } from 'primeng/carousel';
         MatListModule,
         MatProgressBarModule,
         MatExpansionModule,
-        CarouselModule
+        CarouselModule,
+        MatDialogModule,
     ],
     providers: [],
     bootstrap: [AppComponent],
